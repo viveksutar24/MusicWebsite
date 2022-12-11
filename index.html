@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="/assets/images/logo.png" alt="">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SPECIFICATION</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">CONNECT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br>REAL<br> SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="/assets/images/play.png" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="mysong">
+        <source src="/assets/images/chill-abstract-intention-12099.mp3">
+    </audio>
+
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            mysong.play();
+        }
+    </script>
+</body>
+
+</html>
